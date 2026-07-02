@@ -273,5 +273,6 @@
   "patchouli.coffeecraft.name": "CoffeeCraft - Guide",
   "tooltip.coffeecraft.grinder": "Grinds roasted coffee bean",
   "tooltip.coffeecraft.roaster": "For roasting shelled coffee beans",
-  "tooltip.coffeecraft.decorative": "§5Decorative"
+  "tooltip.coffeecraft.decorative": "§5Decorative",
+  "tooltip.coffeecraft.terracottamug":"Mug à faire cuire"
 }

@@ -44,7 +44,8 @@ public class TerracottaMugBlock extends FallingBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Mug \u00E0 faire cuire"));
+		// 改爲可譯
+		list.add(Component.translatable("tooltip.coffeecraft.terracottamug"));
 	}
 
 	@Override

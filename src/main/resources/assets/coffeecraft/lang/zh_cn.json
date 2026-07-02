@@ -274,5 +274,6 @@
   "patchouli.coffeecraft.name": "咖啡工艺 - 指南",
   "tooltip.coffeecraft.grinder": "用于研磨烘焙过的咖啡豆",
   "tooltip.coffeecraft.roaster": "用于烘焙去过壳的咖啡豆",
-  "tooltip.coffeecraft.decorative": "§5装饰性"
+  "tooltip.coffeecraft.decorative": "§5装饰性",
+  "tooltip.coffeecraft.terracottamug":"需熔炼的马克杯"
 }
