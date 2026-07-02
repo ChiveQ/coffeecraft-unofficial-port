@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '1.0.3'
+version = '1.20.1-1.0.3'
 group = 'net.mcreator.coffeecraft'
 archivesBaseName = 'coffeecraft'
 
