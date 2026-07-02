@@ -4,6 +4,8 @@
  */
 package net.mcreator.coffeecraft.init;
 
+import net.mcreator.coffeecraft.block.CoffeeBlock;
+import net.mcreator.coffeecraft.block.ExpressoBlocBlock;
 import net.mcreator.coffeecraft.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -32,24 +34,62 @@ public class CoffeecraftModItems {
 	public static final RegistryObject<Item> COFFEE_MAKER_WHITE_EMPTY = block(CoffeecraftModBlocks.COFFEE_MAKER_WHITE_EMPTY);
 	public static final RegistryObject<Item> GRINDER_ANIM = REGISTRY.register(CoffeecraftModBlocks.GRINDER_ANIM.getId().getPath(), () -> new GrinderAnimDisplayItem(CoffeecraftModBlocks.GRINDER_ANIM.get(), new Item.Properties()));
 	public static final RegistryObject<Item> ROASTER_ANIMATED = REGISTRY.register(CoffeecraftModBlocks.ROASTER_ANIMATED.getId().getPath(), () -> new RoasterAnimatedDisplayItem(CoffeecraftModBlocks.ROASTER_ANIMATED.get(), new Item.Properties()));
-	//public static final RegistryObject<Item> SHORT_MUG = REGISTRY.register("short_mug", () -> new ShortMugItem());
+	// 註冊咖啡皆用新法
 	public static final RegistryObject<Item> SHORT_MUG = REGISTRY.register("short_mug", () ->
-			new CoffeeItem(new FoodProperties.Builder().nutrition(1).saturationMod(0f).alwaysEat()
-			.effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0),1.0F).build()));
-	public static final RegistryObject<Item> LONG_MUG = REGISTRY.register("long_mug", () -> new LongMugItem());
-	public static final RegistryObject<Item> COFFEE_SWEET_EXPRESSO = REGISTRY.register("coffee_sweet_expresso", () -> new CoffeeSweetExpressoItem());
-	public static final RegistryObject<Item> COFFEE_SWEET_LUNGO = REGISTRY.register("coffee_sweet_lungo", () -> new CoffeeSweetLungoItem());
-	public static final RegistryObject<Item> COFFEE_CAPPUCCINO = REGISTRY.register("coffee_cappuccino", () -> new CoffeeCappuccinoItem());
-	public static final RegistryObject<Item> COFFEE_MOCHA = REGISTRY.register("coffee_mocha", () -> new CoffeeMochaItem());
-	public static final RegistryObject<Item> COFFEE_EGG = REGISTRY.register("coffee_egg", () -> new CoffeeEggItem());
-	public static final RegistryObject<Item> COFFEE_ICED = REGISTRY.register("coffee_iced", () -> new CoffeeIcedItem());
-	public static final RegistryObject<Item> COFFEE_CARROT = REGISTRY.register("coffee_carrot", () -> new CoffeeCarrotItem());
-	public static final RegistryObject<Item> COFFEE_HONEY = REGISTRY.register("coffee_honey", () -> new CoffeeHoneyItem());
-	//public static final RegistryObject<Item> COFFEE_NETHER = REGISTRY.register("coffee_nether", () -> new CoffeeNetherItem());
-	public static final RegistryObject<Item> COFFEE_NETHER =
-			REGISTRY.register("coffee_nether",()->new CoffeeItem(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
-							.effect(()->new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 0),1.0F).build()));
-	public static final RegistryObject<Item> END_COFFEE = REGISTRY.register("end_coffee", () -> new EndCoffeeItem());
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(1).saturationMod(0f).alwaysEat()
+			.effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0),1.0F).build()
+					, CoffeecraftModBlocks.EXPRESSO_BLOC));
+	public static final RegistryObject<Item> LONG_MUG = REGISTRY.register("long_mug", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(0).saturationMod(0f).alwaysEat()
+					.effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 1),1.0F).build(),
+					CoffeecraftModBlocks.LUNGO_BLOC));
+	public static final RegistryObject<Item> COFFEE_SWEET_EXPRESSO = REGISTRY.register("coffee_sweet_expresso", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(0).saturationMod(0f).alwaysEat()
+					.effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0),1.0F)
+					.effect(()->new MobEffectInstance(MobEffects.NIGHT_VISION, 3600, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_SWEET_EXPRESSO_BLOC));
+	public static final RegistryObject<Item> COFFEE_SWEET_LUNGO = REGISTRY.register("coffee_sweet_lungo", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(0).saturationMod(0f).alwaysEat()
+					.effect(()->new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 1),1.0F)
+					.effect(()->new MobEffectInstance(MobEffects.NIGHT_VISION, 3600, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_SWEET_LUNGO_BLOC));
+	public static final RegistryObject<Item> COFFEE_CAPPUCCINO = REGISTRY.register("coffee_cappuccino", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+					.effect(()->new MobEffectInstance(MobEffects.HEAL, 20, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_CAPPUCCINO_BLOC));
+	public static final RegistryObject<Item> COFFEE_MOCHA = REGISTRY.register("coffee_mocha", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.HEAL, 20, 0),1.0F)
+							.effect(()->new MobEffectInstance(MobEffects.JUMP, 2400, 1),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_MOCHA_BLOC));
+	public static final RegistryObject<Item> COFFEE_EGG = REGISTRY.register("coffee_egg", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.SATURATION, 4800, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_EGG_BLOC));
+	public static final RegistryObject<Item> COFFEE_ICED = REGISTRY.register("coffee_iced", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(1).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 1),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_ICED_BLOC));
+	public static final RegistryObject<Item> COFFEE_CARROT = REGISTRY.register("coffee_carrot", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0),1.0F)
+							.effect(()->new MobEffectInstance(MobEffects.SATURATION, 3600, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_CARROT_BLOC));
+	public static final RegistryObject<Item> COFFEE_HONEY = REGISTRY.register("coffee_honey", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.REGENERATION, 3600, 0),1.0F).build(),
+					CoffeecraftModBlocks.COFFEE_HONEY_BLOC));
+	public static final RegistryObject<Item> COFFEE_NETHER = REGISTRY.register("coffee_nether",()->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+							.effect(()->new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 0),1.0F).build(),
+					Rarity.UNCOMMON,
+					CoffeecraftModBlocks.COFFEE_NETHER_BLOC));
+	public static final RegistryObject<Item> END_COFFEE = REGISTRY.register("end_coffee", () ->
+			CoffeeItem.create(new FoodProperties.Builder().nutrition(6).saturationMod(0f).alwaysEat()
+					.effect(()->new MobEffectInstance(MobEffects.LEVITATION, 400, 1),1.0F)
+					.effect(()->new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 1),1.0F).build(),
+					Rarity.RARE,
+					CoffeecraftModBlocks.END_COFFEE_BLOC));
 	public static final RegistryObject<Item> CROISSANT = REGISTRY.register("croissant", () -> new CroissantItem());
 	public static final RegistryObject<Item> COFFEE_PANCARTE = block(CoffeecraftModBlocks.COFFEE_PANCARTE);
 	public static final RegistryObject<Item> BAG_COFFEE_ROASTED = block(CoffeecraftModBlocks.BAG_COFFEE_ROASTED);

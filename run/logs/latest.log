@@ -1,169 +1,116 @@
-[027月2026 19:02:28.496] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Chive\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[027月2026 19:02:28.496] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[027月2026 19:02:28.635] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[027月2026 19:02:28.700] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[027月2026 19:02:28.776] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[027月2026 19:02:28.926] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Chive/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[027月2026 19:02:28.926] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics GL version 4.6.0 - Build 31.0.101.4146, Intel
-[027月2026 19:02:29.312] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[027月2026 19:02:29.318] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[027月2026 19:02:29.318] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[027月2026 19:02:29.329] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[027月2026 19:02:29.570] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
-[027月2026 19:02:31.244] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[027月2026 19:02:31.246] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Chive\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[027月2026 19:02:31.681] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using D:\ChiveQ\Workspace\IntelliJ\mcmods\coffeecraft-unofficialport/build/createSrgToMcp/output.srg
-[027月2026 19:02:31.681] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\ChiveQ\Workspace\IntelliJ\mcmods\coffeecraft-unofficialport/build/createSrgToMcp/output.srg
-[027月2026 19:02:35.291] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 142 milliseconds
-[027月2026 19:02:36.803] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Chive/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[027月2026 19:02:36.804] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Chive/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[027月2026 19:02:36.818] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[027月2026 19:02:36.827] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[027月2026 19:02:36.977] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[027月2026 19:02:37.254] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[027月2026 19:02:37.258] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[027月2026 19:02:38.498] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
-[027月2026 19:02:38.906] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[027月2026 19:02:39.128] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[027月2026 19:02:39.151] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[027月2026 19:02:39.889] [Worker-Main-8/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'coffeecraft:coffee_nether_new#inventory' referenced from: coffeecraft:coffee_nether_new#inventory: java.io.FileNotFoundException: coffeecraft:models/item/coffee_nether_new.json
-[027月2026 19:02:40.318] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.4.10
-[027月2026 19:02:41.796] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[027月2026 19:02:41.796] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[027月2026 19:02:42.127] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 本机扬声器 (Audio Device)
-[027月2026 19:02:42.128] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[027月2026 19:02:42.229] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[027月2026 19:02:42.324] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[027月2026 19:02:42.326] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[027月2026 19:02:42.332] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[027月2026 19:02:42.338] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[027月2026 19:02:42.368] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[027月2026 19:02:42.370] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[027月2026 19:02:42.372] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[027月2026 19:02:42.374] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[027月2026 19:02:42.853] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[027月2026 19:02:43.392] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[027月2026 19:02:43.399] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[027月2026 19:02:43.401] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[027月2026 19:02:43.403] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader preloaded 65 jsons
-[027月2026 19:02:43.403] [Render thread/INFO] [patchouli/]: Not reloading resource pack-based books as client world is missing
-[027月2026 19:02:44.059] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[027月2026 19:03:14.596] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[027月2026 19:03:15.945] [Worker-Main-6/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [coffee:coffee_plant_stage_0 (from main), coffee:coffee_plant_stage_1 (from main), coffee:coffee_plant_stage_2 (from main), coffee:coffe_plant_stage_3_bottom (from main), coffee:coffee_plant_stage_4_bottom (from main), coffee:coffee_plant_stage_5_bottom (from main), coffee:coffee_plant_stage_6_bottom (from main)] as it is missing following references: coffee:coffee_plant_stage_0 (from main), 
+[027月2026 23:31:39.150] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Chive\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[027月2026 23:31:39.161] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[027月2026 23:31:39.258] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[027月2026 23:31:39.338] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[027月2026 23:31:39.427] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[027月2026 23:31:39.569] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics GL version 4.6.0 - Build 31.0.101.4146, Intel
+[027月2026 23:31:39.572] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Chive/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[027月2026 23:31:40.044] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[027月2026 23:31:40.048] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[027月2026 23:31:40.056] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[027月2026 23:31:40.062] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Chive\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[027月2026 23:31:40.307] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[027月2026 23:31:41.995] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[027月2026 23:31:41.996] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Chive\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[027月2026 23:31:42.404] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using D:\ChiveQ\Workspace\IntelliJ\mcmods\coffeecraft-unofficialport/build/createSrgToMcp/output.srg
+[027月2026 23:31:42.404] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\ChiveQ\Workspace\IntelliJ\mcmods\coffeecraft-unofficialport/build/createSrgToMcp/output.srg
+[027月2026 23:31:45.976] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 130 milliseconds
+[027月2026 23:31:47.337] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Chive/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[027月2026 23:31:47.337] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Chive/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[027月2026 23:31:47.354] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[027月2026 23:31:47.359] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[027月2026 23:31:47.463] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[027月2026 23:31:47.705] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[027月2026 23:31:47.707] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[027月2026 23:31:48.876] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[027月2026 23:31:49.253] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[027月2026 23:31:49.438] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[027月2026 23:31:49.451] [Worker-Main-10/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[027月2026 23:31:51.467] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.4.10
+[027月2026 23:31:51.959] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[027月2026 23:31:51.959] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[027月2026 23:31:52.303] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 本机扬声器 (Audio Device)
+[027月2026 23:31:52.304] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[027月2026 23:31:52.407] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[027月2026 23:31:52.473] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[027月2026 23:31:52.476] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[027月2026 23:31:52.482] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[027月2026 23:31:52.489] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[027月2026 23:31:52.525] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[027月2026 23:31:52.527] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[027月2026 23:31:52.528] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[027月2026 23:31:52.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[027月2026 23:31:53.020] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[027月2026 23:31:53.526] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[027月2026 23:31:53.539] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[027月2026 23:31:53.541] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[027月2026 23:31:53.545] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader preloaded 65 jsons
+[027月2026 23:31:53.545] [Render thread/INFO] [patchouli/]: Not reloading resource pack-based books as client world is missing
+[027月2026 23:31:54.183] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[027月2026 23:32:26.073] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[027月2026 23:32:27.296] [Worker-Main-4/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [coffee:coffee_plant_stage_0 (from main), coffee:coffee_plant_stage_1 (from main), coffee:coffee_plant_stage_2 (from main), coffee:coffe_plant_stage_3_bottom (from main), coffee:coffee_plant_stage_4_bottom (from main), coffee:coffee_plant_stage_5_bottom (from main), coffee:coffee_plant_stage_6_bottom (from main)] as it is missing following references: coffee:coffee_plant_stage_0 (from main), 
 	coffee:coffee_plant_stage_1 (from main), 
 	coffee:coffee_plant_stage_2 (from main), 
 	coffee:coffe_plant_stage_3_bottom (from main), 
 	coffee:coffee_plant_stage_4_bottom (from main), 
 	coffee:coffee_plant_stage_5_bottom (from main), 
 	coffee:coffee_plant_stage_6_bottom (from main)
-[027月2026 19:03:15.945] [Worker-Main-6/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [coffee:coffee_plant_stage_3_top (from main), coffee:coffee_plant_stage_4_top (from main), coffee:coffee_plant_stage_5_top (from main), coffee:coffee_plant_stage_6_top (from main)] as it is missing following references: coffee:coffee_plant_stage_3_top (from main), 
+[027月2026 23:32:27.298] [Worker-Main-4/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag [coffee:coffee_plant_stage_3_top (from main), coffee:coffee_plant_stage_4_top (from main), coffee:coffee_plant_stage_5_top (from main), coffee:coffee_plant_stage_6_top (from main)] as it is missing following references: coffee:coffee_plant_stage_3_top (from main), 
 	coffee:coffee_plant_stage_4_top (from main), 
 	coffee:coffee_plant_stage_5_top (from main), 
 	coffee:coffee_plant_stage_6_top (from main)
-[027月2026 19:03:16.270] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[027月2026 19:03:16.365] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[027月2026 19:03:16.961] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[027月2026 19:03:16.961] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[027月2026 19:03:18.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[027月2026 19:03:20.521] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:20.539] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:20.596] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:20.614] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:20.633] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:20.633] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
-[027月2026 19:03:21.054] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：19%
-[027月2026 19:03:21.555] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：84%
-[027月2026 19:03:21.632] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3583 ms
-[027月2026 19:03:21.632] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[027月2026 19:03:21.634] [Server thread/INFO] [patchouli/]: Sending reload packet to clients
-[027月2026 19:03:21.789] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 8, from 0
-[027月2026 19:03:21.937] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[027月2026 19:03:22.630] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[027月2026 19:03:22.691] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:90162c66] logged in with entity id 237 at (58.1731710403815, 83.0, -38.30000001192093)
-[027月2026 19:03:22.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev加入了游戏
-[027月2026 19:03:23.429] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 22 advancements
-[027月2026 19:03:23.433] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 312.8 μs
-[027月2026 19:03:23.439] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 354.0 μs
-[027月2026 19:03:23.456] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 143.9 μs
-[027月2026 19:03:23.861] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:03:23.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:03:25.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:03:25.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:04:28.065] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:04:28.073] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:04:28.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:04:28.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:07:31.229] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: 已将1个[咖啡桶]给予Dev]
-[027月2026 19:07:31.232] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 已将1个[咖啡桶]给予Dev
-[027月2026 19:09:59.765] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:09:59.774] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:09:59.786] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:09:59.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:10:09.565] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:10:09.579] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:10:09.586] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:10:09.588] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:10:12.553] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[027月2026 19:10:12.562] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[027月2026 19:10:13.190] [Worker-Main-4/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'coffeecraft:coffee_nether_new#inventory' referenced from: coffeecraft:coffee_nether_new#inventory: java.io.FileNotFoundException: coffeecraft:models/item/coffee_nether_new.json
-[027月2026 19:10:13.668] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[027月2026 19:10:13.668] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[027月2026 19:10:13.768] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 本机扬声器 (Audio Device)
-[027月2026 19:10:13.768] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[027月2026 19:10:13.831] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[027月2026 19:10:13.870] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[027月2026 19:10:13.872] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[027月2026 19:10:13.873] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[027月2026 19:10:13.875] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[027月2026 19:10:13.888] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[027月2026 19:10:13.890] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[027月2026 19:10:13.890] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[027月2026 19:10:13.892] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[027月2026 19:10:14.047] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[027月2026 19:10:14.298] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[027月2026 19:10:14.309] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[027月2026 19:10:14.310] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[027月2026 19:10:14.313] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader preloaded 65 jsons
-[027月2026 19:10:14.313] [Render thread/INFO] [patchouli/]: Reloading resource pack-based books, world is nonnull
-[027月2026 19:10:14.313] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 96.90 μs
-[027月2026 19:10:14.313] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 88.00 μs
-[027月2026 19:10:14.315] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 73.80 μs
-[027月2026 19:14:46.264] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:14:46.269] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:14:46.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:14:46.281] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:19:09.614] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:19:09.619] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:19:09.624] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:19:09.625] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:19:20.115] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:19:20.124] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:19:20.130] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:19:20.131] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:19:22.964] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:19:22.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:19:22.982] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:19:22.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:20:07.573] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [调试]： 高级提示框：显示
-[027月2026 19:20:10.214] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:20:10.219] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:20:10.226] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:20:10.227] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:20:16.564] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[027月2026 19:20:16.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:20:16.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:20:16.589] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:24:31.728] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: 连接中断
-[027月2026 19:24:31.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev退出了游戏
-[027月2026 19:24:31.738] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[027月2026 19:24:31.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[027月2026 19:24:31.773] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[027月2026 19:24:31.773] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[027月2026 19:24:32.404] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
-[027月2026 19:24:33.399] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
-[027月2026 19:24:33.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
-[027月2026 19:24:33.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (咖啡工埶迻植_NGV32): All chunks are saved
-[027月2026 19:24:33.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[027月2026 19:24:33.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[027月2026 19:24:33.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[027月2026 19:24:34.997] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[027月2026 23:32:27.633] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[027月2026 23:32:27.723] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[027月2026 23:32:28.315] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[027月2026 23:32:28.315] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[027月2026 23:32:29.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[027月2026 23:32:31.279] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[027月2026 23:32:31.316] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[027月2026 23:32:31.316] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[027月2026 23:32:31.316] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[027月2026 23:32:31.539] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[027月2026 23:32:32.041] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：37%
+[027月2026 23:32:32.322] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[027月2026 23:32:32.324] [Server thread/INFO] [patchouli/]: Sending reload packet to clients
+[027月2026 23:32:32.328] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2797 ms
+[027月2026 23:32:32.473] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 8, from 0
+[027月2026 23:32:32.548] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[027月2026 23:32:33.052] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[027月2026 23:32:33.106] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:7fbf6b6c] logged in with entity id 173 at (52.164002402922954, 84.0, -30.930234077475504)
+[027月2026 23:32:33.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev加入了游戏
+[027月2026 23:32:33.626] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 32 advancements
+[027月2026 23:32:33.632] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 373.0 μs
+[027月2026 23:32:33.635] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 154.6 μs
+[027月2026 23:32:33.651] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader: Files found in 160.0 μs
+[027月2026 23:33:56.506] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: 已更改位于39, 81, -37的方块]
+[027月2026 23:33:56.511] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 已更改位于39, 81, -37的方块
+[027月2026 23:34:28.486] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: 已将自己的游戏模式设置为生存模式]
+[027月2026 23:34:28.486] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 已将自己的游戏模式设置为生存模式
+[027月2026 23:34:39.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: 已将自己的游戏模式设置为创造模式]
+[027月2026 23:34:39.280] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 已将自己的游戏模式设置为创造模式
+[027月2026 23:34:44.242] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[027月2026 23:34:44.250] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
+[027月2026 23:34:44.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
+[027月2026 23:34:44.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
+[027月2026 23:35:04.442] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[027月2026 23:35:04.449] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
+[027月2026 23:35:04.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
+[027月2026 23:35:04.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
+[027月2026 23:35:38.191] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[027月2026 23:35:38.201] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
+[027月2026 23:35:38.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
+[027月2026 23:35:38.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
+[027月2026 23:35:38.944] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: 连接中断
+[027月2026 23:35:38.944] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev退出了游戏
+[027月2026 23:35:38.958] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[027月2026 23:35:38.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[027月2026 23:35:38.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[027月2026 23:35:38.991] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[027月2026 23:35:39.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:overworld
+[027月2026 23:35:39.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_end
+[027月2026 23:35:39.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[咖啡工埶迻植_NGV32]'/minecraft:the_nether
+[027月2026 23:35:40.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (咖啡工埶迻植_NGV32): All chunks are saved
+[027月2026 23:35:40.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[027月2026 23:35:40.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[027月2026 23:35:40.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[027月2026 23:35:42.811] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

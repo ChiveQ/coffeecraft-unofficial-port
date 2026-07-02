@@ -63,7 +63,7 @@ public class RoasterBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("For roasting shelled coffee beans"));
+		list.add(Component.translatable("tooltip.coffeecraft.roaster"));
 	}
 
 	@Override

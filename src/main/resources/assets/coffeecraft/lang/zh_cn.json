@@ -271,5 +271,8 @@
   "block.coffeecraft.coffee_maker_white_empty": "白色咖啡机",
   "block.coffeecraft.grinder_anim": "研磨机",
   "patchouli.coffeecraft.landing_text": "本指南旨在协助您开启咖啡种植之旅，涵盖制作咖啡的基础概念与工艺",
-  "patchouli.coffeecraft.name": "咖啡工艺 - 指南"
+  "patchouli.coffeecraft.name": "咖啡工艺 - 指南",
+  "tooltip.coffeecraft.grinder": "用于研磨烘焙过的咖啡豆",
+  "tooltip.coffeecraft.roaster": "用于烘焙去过壳的咖啡豆",
+  "tooltip.coffeecraft.decorative": "§5装饰性"
 }

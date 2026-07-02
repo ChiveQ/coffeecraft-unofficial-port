@@ -77,7 +77,8 @@ public class GrinderAnimBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Grinds roasted coffee beans"));
+		// 改爲可譯
+		list.add(Component.translatable("tooltip.coffeecraft.grinder"));
 	}
 
 	@Override

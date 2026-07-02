@@ -270,5 +270,8 @@
   "block.coffeecraft.coffee_maker_white_empty": "Coffee Maker White",
   "block.coffeecraft.grinder_anim": "Grinder",
   "patchouli.coffeecraft.landing_text": "This guide is designed to help you on your coffee-growing adventure. It covers the basic concepts and crafts involved in making coffee.",
-  "patchouli.coffeecraft.name": "CoffeeCraft - Guide"
+  "patchouli.coffeecraft.name": "CoffeeCraft - Guide",
+  "tooltip.coffeecraft.grinder": "Grinds roasted coffee bean",
+  "tooltip.coffeecraft.roaster": "For roasting shelled coffee beans",
+  "tooltip.coffeecraft.decorative": "§5Decorative"
 }

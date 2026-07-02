@@ -6,4 +6,6 @@ This version includes the following changes:
 - Included complete zh_cn localization by 梦兮
 - Changed the logic of placing coffee to allow drinking when not crouching but pointing at a block
 - Changed the logic of coffee tooltips, using PotionUtils to show effects instead of hard coding
-- Reconstructed the Item and Block system, removing lots of redundant classes
+- Reconstructed the Item and Block registration system, removing lots of redundant classes while keeping original behaviour
+- Fixed hardcoding components in tooltips
+- Removed MCreator and Eclipse workspace files (elements .mcreator models .assets  .settings)

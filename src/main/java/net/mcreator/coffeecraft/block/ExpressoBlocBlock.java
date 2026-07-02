@@ -1,6 +1,7 @@
 
 package net.mcreator.coffeecraft.block;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -31,7 +32,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.coffeecraft.procedures.CoffeeSmokeDefaultProcedure;
 import net.mcreator.coffeecraft.init.CoffeecraftModItems;
 
 import java.util.List;
@@ -114,6 +114,9 @@ public class ExpressoBlocBlock extends FallingBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		CoffeeSmokeDefaultProcedure.execute(world, x, y, z);
+		// 元爲CoffeeSmokeDefaultProcedure
+		if (Math.random() >= 0.8) {
+			world.addParticle(ParticleTypes.SMOKE, (x + 0.5), (y + 0.5), (z + 0.5), 0, 0.01, 0);
+		}
 	}
 }

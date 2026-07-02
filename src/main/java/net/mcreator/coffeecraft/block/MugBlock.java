@@ -1,15 +1,14 @@
 package net.mcreator.coffeecraft.block;
 
-
-import net.minecraft.client.Minecraft;
+import net.mcreator.coffeecraft.procedures.TerracottaMugLorsDunClicDroitSurLeBlocProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.util.RandomSource;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -19,40 +18,28 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.List;
 
-/**
- * 代諸咖啡凷也。
- * */
-public class CoffeeBlock extends FallingBlock {
-
-    // 物
-    private final RegistryObject<Item> coffeeItem;
-
-    // 煙
-    private final SimpleParticleType particle;;
-
+// 總諸盃
+public class MugBlock extends FallingBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public CoffeeBlock(RegistryObject<Item> item, SimpleParticleType animationParticle) {
-        super(BlockBehaviour.Properties.of().sound(SoundType.DECORATED_POT).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+    public MugBlock() {
+        super(BlockBehaviour.Properties.of().sound(SoundType.DECORATED_POT).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-        coffeeItem = item;
-        particle = animationParticle;
     }
 
-    public CoffeeBlock(RegistryObject<Item> item){
-        this(item,ParticleTypes.SMOKE);// 闕从煙
+    @Override
+    public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+        super.appendHoverText(itemstack, world, list, flag);
+        // 改爲可譯
+        list.add(Component.translatable("tooltip.coffeecraft.decorative"));
     }
 
     @Override
@@ -66,12 +53,12 @@ public class CoffeeBlock extends FallingBlock {
     }
 
     @Override
-    public @NotNull VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+    public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
     }
 
     @Override
-    public @NotNull VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return switch (state.getValue(FACING)) {
             default -> Shapes.or(box(6.45, -0.025, 6.75, 9.45, 0.475, 9.75), box(6.2, 0.475, 6.5, 9.7, 3, 10), box(5.2, 0.75, 7.8, 6.2, 2.75, 8.8));
             case NORTH -> Shapes.or(box(6.55, -0.025, 6.25, 9.55, 0.475, 9.25), box(6.3, 0.475, 6, 9.8, 3, 9.5), box(9.8, 0.75, 7.2, 10.8, 2.75, 8.2));
@@ -90,7 +77,7 @@ public class CoffeeBlock extends FallingBlock {
         return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
-    public @NotNull BlockState rotate(BlockState state, Rotation rot) {
+    public BlockState rotate(BlockState state, Rotation rot) {
         return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
     }
 
@@ -99,33 +86,24 @@ public class CoffeeBlock extends FallingBlock {
     }
 
     @Override
-    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-        return new ItemStack(coffeeItem.get());
-    }
-
-    @Override
     public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
         List<ItemStack> dropsOriginal = super.getDrops(state, builder);
         if (!dropsOriginal.isEmpty())
             return dropsOriginal;
-        return Collections.singletonList(new ItemStack(coffeeItem.get()));
+        return Collections.singletonList(new ItemStack(this, 1));
     }
 
-    @OnlyIn(Dist.CLIENT)
     @Override
-    public void animateTick(@NotNull BlockState blockstate, @NotNull Level world,
-                            @NotNull BlockPos pos, @NotNull RandomSource random) {
-        super.animateTick(blockstate, world, pos, random);
-        Player entity = Minecraft.getInstance().player;
+    public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+        super.use(blockstate, world, pos, entity, hand, hit);
         int x = pos.getX();
         int y = pos.getY();
         int z = pos.getZ();
-        // 代SmokeProcedure
-        if(particle==null)
-            return; // 無煙則止。冰咖啡有此。
-        if (Math.random() >= 0.8) {
-            world.addParticle(particle, (x + 0.5), (y + 0.5), (z + 0.5), 0, 0.01, 0);
-        }
+        double hitX = hit.getLocation().x;
+        double hitY = hit.getLocation().y;
+        double hitZ = hit.getLocation().z;
+        Direction direction = hit.getDirection();
+        TerracottaMugLorsDunClicDroitSurLeBlocProcedure.execute(world, x, y, z, entity);
+        return InteractionResult.SUCCESS;
     }
-
 }

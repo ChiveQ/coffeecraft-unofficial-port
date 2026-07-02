@@ -4,103 +4,26 @@
  */
 package net.mcreator.coffeecraft.init;
 
+import net.mcreator.coffeecraft.block.*;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.coffeecraft.block.YellowMugBlock;
-import net.mcreator.coffeecraft.block.YellowMug3Block;
-import net.mcreator.coffeecraft.block.YellowMug2Block;
-import net.mcreator.coffeecraft.block.WhiteMugBlock;
-import net.mcreator.coffeecraft.block.WhiteMug3Block;
-import net.mcreator.coffeecraft.block.WhiteMug2Block;
-import net.mcreator.coffeecraft.block.TerracottaMugBlock;
-import net.mcreator.coffeecraft.block.TerracottaMug3Block;
-import net.mcreator.coffeecraft.block.TerracottaMug2Block;
-import net.mcreator.coffeecraft.block.RoasterBlock;
-import net.mcreator.coffeecraft.block.RoasterAnimatedBlock;
-import net.mcreator.coffeecraft.block.RedMugBlock;
-import net.mcreator.coffeecraft.block.RedMug3Block;
-import net.mcreator.coffeecraft.block.RedMug2Block;
-import net.mcreator.coffeecraft.block.PurpleMugBlock;
-import net.mcreator.coffeecraft.block.PurpleMug3Block;
-import net.mcreator.coffeecraft.block.PurpleMug2Block;
-import net.mcreator.coffeecraft.block.PinkMugBlock;
-import net.mcreator.coffeecraft.block.PinkMug3Block;
-import net.mcreator.coffeecraft.block.PinkMug2Block;
-import net.mcreator.coffeecraft.block.OrangeMugBlock;
-import net.mcreator.coffeecraft.block.OrangeMug3Block;
-import net.mcreator.coffeecraft.block.OrangeMug2Block;
-import net.mcreator.coffeecraft.block.MagentaMugBlock;
-import net.mcreator.coffeecraft.block.MagentaMug3Block;
-import net.mcreator.coffeecraft.block.MagentaMug2Block;
-import net.mcreator.coffeecraft.block.LungoBlocBlock;
-import net.mcreator.coffeecraft.block.LimeMugBlock;
-import net.mcreator.coffeecraft.block.LimeMug3Block;
-import net.mcreator.coffeecraft.block.LimeMug2Block;
-import net.mcreator.coffeecraft.block.LightGrayMugBlock;
-import net.mcreator.coffeecraft.block.LightGrayMug3Block;
-import net.mcreator.coffeecraft.block.LightGrayMug2Block;
-import net.mcreator.coffeecraft.block.LightBlueMugBlock;
-import net.mcreator.coffeecraft.block.LightBlueMug3Block;
-import net.mcreator.coffeecraft.block.LightBlueMug2Block;
-import net.mcreator.coffeecraft.block.GrinderBlock;
-import net.mcreator.coffeecraft.block.GrinderAnimBlock;
-import net.mcreator.coffeecraft.block.GreenMugBlock;
-import net.mcreator.coffeecraft.block.GreenMug3Block;
-import net.mcreator.coffeecraft.block.GreenMug2Block;
-import net.mcreator.coffeecraft.block.GrayMugBlock;
-import net.mcreator.coffeecraft.block.GrayMug3Block;
-import net.mcreator.coffeecraft.block.GrayMug2Block;
-import net.mcreator.coffeecraft.block.ExpressoBlocBlock;
-import net.mcreator.coffeecraft.block.EndCoffeeBlocBlock;
-import net.mcreator.coffeecraft.block.CyanMugBlock;
-import net.mcreator.coffeecraft.block.CyanMug3Block;
-import net.mcreator.coffeecraft.block.CyanMug2Block;
-import net.mcreator.coffeecraft.block.CroissantBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeSweetLungoBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeSweetExpressoBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage6TopBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage6BottomBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage5TopBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage5BottomBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage4TopBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage4BottomBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage3TopBlock;
-import net.mcreator.coffeecraft.block.CoffeePlantStage2Block;
-import net.mcreator.coffeecraft.block.CoffeePlantStage1Block;
-import net.mcreator.coffeecraft.block.CoffeePlantStage0Block;
-import net.mcreator.coffeecraft.block.CoffeePlantBlock;
-import net.mcreator.coffeecraft.block.CoffeePancarteBlock;
-import net.mcreator.coffeecraft.block.CoffeeNetherBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeMochaBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeMakerWhiteEmptyBlock;
-import net.mcreator.coffeecraft.block.CoffeeMakerWhiteBlock;
-import net.mcreator.coffeecraft.block.CoffeeMakerBlackEmptyBlock;
-import net.mcreator.coffeecraft.block.CoffeeMakerBlackBlock;
-import net.mcreator.coffeecraft.block.CoffeeIcedBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeHoneyBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeFluidBlock;
-import net.mcreator.coffeecraft.block.CoffeeEggBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeCarrotBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeCappuccinoBlocBlock;
-import net.mcreator.coffeecraft.block.CoffeeBoxBlocBlock;
-import net.mcreator.coffeecraft.block.CoffePlantStage3BottomBlock;
-import net.mcreator.coffeecraft.block.BrownMugBlock;
-import net.mcreator.coffeecraft.block.BrownMug3Block;
-import net.mcreator.coffeecraft.block.BrownMug2Block;
-import net.mcreator.coffeecraft.block.BlueMugBlock;
-import net.mcreator.coffeecraft.block.BlueMug3Block;
-import net.mcreator.coffeecraft.block.BlueMug2Block;
-import net.mcreator.coffeecraft.block.BlackMugBlock;
-import net.mcreator.coffeecraft.block.BlackMug3Block;
-import net.mcreator.coffeecraft.block.BlackMug2Block;
-import net.mcreator.coffeecraft.block.BagCoffeeRoastedBlock;
-import net.mcreator.coffeecraft.block.BagCoffeePowderBlock;
-import net.mcreator.coffeecraft.block.BagCoffeeBeanBlock;
 import net.mcreator.coffeecraft.CoffeecraftMod;
+
+import java.util.Objects;
 
 public class CoffeecraftModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CoffeecraftMod.MODID);
@@ -114,22 +37,22 @@ public class CoffeecraftModBlocks {
 	public static final RegistryObject<Block> BAG_COFFEE_POWDER = REGISTRY.register("bag_coffee_powder", () -> new BagCoffeePowderBlock());
 	public static final RegistryObject<Block> COFFEE_FLUID = REGISTRY.register("coffee_fluid", () -> new CoffeeFluidBlock());
 	public static final RegistryObject<Block> TERRACOTTA_MUG = REGISTRY.register("terracotta_mug", () -> new TerracottaMugBlock());
-	public static final RegistryObject<Block> WHITE_MUG = REGISTRY.register("white_mug", () -> new WhiteMugBlock());
-	public static final RegistryObject<Block> BLACK_MUG = REGISTRY.register("black_mug", () -> new BlackMugBlock());
-	public static final RegistryObject<Block> BLUE_MUG = REGISTRY.register("blue_mug", () -> new BlueMugBlock());
-	public static final RegistryObject<Block> BROWN_MUG = REGISTRY.register("brown_mug", () -> new BrownMugBlock());
-	public static final RegistryObject<Block> CYAN_MUG = REGISTRY.register("cyan_mug", () -> new CyanMugBlock());
-	public static final RegistryObject<Block> GRAY_MUG = REGISTRY.register("gray_mug", () -> new GrayMugBlock());
-	public static final RegistryObject<Block> GREEN_MUG = REGISTRY.register("green_mug", () -> new GreenMugBlock());
-	public static final RegistryObject<Block> LIGHT_BLUE_MUG = REGISTRY.register("light_blue_mug", () -> new LightBlueMugBlock());
-	public static final RegistryObject<Block> LIGHT_GRAY_MUG = REGISTRY.register("light_gray_mug", () -> new LightGrayMugBlock());
-	public static final RegistryObject<Block> LIME_MUG = REGISTRY.register("lime_mug", () -> new LimeMugBlock());
-	public static final RegistryObject<Block> MAGENTA_MUG = REGISTRY.register("magenta_mug", () -> new MagentaMugBlock());
-	public static final RegistryObject<Block> ORANGE_MUG = REGISTRY.register("orange_mug", () -> new OrangeMugBlock());
-	public static final RegistryObject<Block> PINK_MUG = REGISTRY.register("pink_mug", () -> new PinkMugBlock());
-	public static final RegistryObject<Block> PURPLE_MUG = REGISTRY.register("purple_mug", () -> new PurpleMugBlock());
-	public static final RegistryObject<Block> RED_MUG = REGISTRY.register("red_mug", () -> new RedMugBlock());
-	public static final RegistryObject<Block> YELLOW_MUG = REGISTRY.register("yellow_mug", () -> new YellowMugBlock());
+	public static final RegistryObject<Block> WHITE_MUG = REGISTRY.register("white_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> BLACK_MUG = REGISTRY.register("black_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> BLUE_MUG = REGISTRY.register("blue_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> BROWN_MUG = REGISTRY.register("brown_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> CYAN_MUG = REGISTRY.register("cyan_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> GRAY_MUG = REGISTRY.register("gray_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> GREEN_MUG = REGISTRY.register("green_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> LIGHT_BLUE_MUG = REGISTRY.register("light_blue_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> LIGHT_GRAY_MUG = REGISTRY.register("light_gray_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> LIME_MUG = REGISTRY.register("lime_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> MAGENTA_MUG = REGISTRY.register("magenta_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> ORANGE_MUG = REGISTRY.register("orange_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> PINK_MUG = REGISTRY.register("pink_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> PURPLE_MUG = REGISTRY.register("purple_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> RED_MUG = REGISTRY.register("red_mug", () -> new MugBlock());
+	public static final RegistryObject<Block> YELLOW_MUG = REGISTRY.register("yellow_mug", () -> new MugBlock());
 	public static final RegistryObject<Block> COFFEE_BOX_BLOC = REGISTRY.register("coffee_box_bloc", () -> new CoffeeBoxBlocBlock());
 	public static final RegistryObject<Block> GRINDER = REGISTRY.register("grinder", () -> new GrinderBlock());
 	public static final RegistryObject<Block> ROASTER = REGISTRY.register("roaster", () -> new RoasterBlock());
@@ -181,17 +104,58 @@ public class CoffeecraftModBlocks {
 	public static final RegistryObject<Block> COFFEE_PLANT_STAGE_6_TOP = REGISTRY.register("coffee_plant_stage_6_top", () -> new CoffeePlantStage6TopBlock());
 	public static final RegistryObject<Block> COFFEE_PLANT = REGISTRY.register("coffee_plant", () -> new CoffeePlantBlock());
 	public static final RegistryObject<Block> COFFEE_PLANT_STAGE_2 = REGISTRY.register("coffee_plant_stage_2", () -> new CoffeePlantStage2Block());
-	public static final RegistryObject<Block> COFFEE_CARROT_BLOC = REGISTRY.register("coffee_carrot_bloc", () -> new CoffeeCarrotBlocBlock());
-	public static final RegistryObject<Block> EXPRESSO_BLOC = REGISTRY.register("expresso_bloc", () -> new ExpressoBlocBlock());
-	public static final RegistryObject<Block> LUNGO_BLOC = REGISTRY.register("lungo_bloc", () -> new LungoBlocBlock());
-	public static final RegistryObject<Block> END_COFFEE_BLOC = REGISTRY.register("end_coffee_bloc", () -> new EndCoffeeBlocBlock());
-	public static final RegistryObject<Block> COFFEE_EGG_BLOC = REGISTRY.register("coffee_egg_bloc", () -> new CoffeeEggBlocBlock());
-	public static final RegistryObject<Block> COFFEE_ICED_BLOC = REGISTRY.register("coffee_iced_bloc", () -> new CoffeeIcedBlocBlock());
-	public static final RegistryObject<Block> COFFEE_NETHER_BLOC = REGISTRY.register("coffee_nether_bloc", () -> new CoffeeNetherBlocBlock());
-	public static final RegistryObject<Block> COFFEE_HONEY_BLOC = REGISTRY.register("coffee_honey_bloc", () -> new CoffeeHoneyBlocBlock());
-	public static final RegistryObject<Block> COFFEE_MOCHA_BLOC = REGISTRY.register("coffee_mocha_bloc", () -> new CoffeeMochaBlocBlock());
-	public static final RegistryObject<Block> COFFEE_CAPPUCCINO_BLOC = REGISTRY.register("coffee_cappuccino_bloc", () -> new CoffeeCappuccinoBlocBlock());
+	public static final RegistryObject<Block> COFFEE_CARROT_BLOC = REGISTRY.register("coffee_carrot_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_CARROT));
+	public static final RegistryObject<Block> EXPRESSO_BLOC = REGISTRY.register("expresso_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.SHORT_MUG));
+	public static final RegistryObject<Block> LUNGO_BLOC = REGISTRY.register("lungo_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.LONG_MUG));
+	public static final RegistryObject<Block> END_COFFEE_BLOC = REGISTRY.register("end_coffee_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.END_COFFEE,ParticleTypes.DRAGON_BREATH){
+				// 措之則落雷
+				@Override
+				public void onPlace(BlockState newState, Level level, BlockPos pos,
+									BlockState oldState, boolean isMoving){
+					if(!level.isClientSide()){
+						ServerLevel serverLevel = (ServerLevel) level;
+						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(serverLevel);
+						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(pos.getX(), pos.getY(), pos.getZ())));
+						entityToSpawn.setVisualOnly(true);
+						serverLevel.addFreshEntity(entityToSpawn);
+					}
+				}
+			});
+	public static final RegistryObject<Block> COFFEE_EGG_BLOC = REGISTRY.register("coffee_egg_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_EGG));
+	public static final RegistryObject<Block> COFFEE_ICED_BLOC = REGISTRY.register("coffee_iced_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_ICED,null));
+	public static final RegistryObject<Block> COFFEE_NETHER_BLOC = REGISTRY.register("coffee_nether_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_NETHER,ParticleTypes.PORTAL){
+				// 措之有界門聲
+				@Override
+				public void onPlace(BlockState newState, Level level, BlockPos pos,
+									BlockState oldState, boolean isMoving){
+					if(!level.isClientSide()){
+						ServerLevel serverLevel = (ServerLevel) level;
+						serverLevel.playSound(null, BlockPos.containing(pos.getX(), pos.getY(), pos.getZ()),
+								Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.portal.ambient"))),
+								SoundSource.BLOCKS, 1, 1);
+					}else{
+						level.playLocalSound(pos.getX(), pos.getY(), pos.getZ(),
+								Objects.requireNonNull(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.portal.ambient"))),
+								SoundSource.BLOCKS, 1, 1, false);
+					}
+				}
+			});
+	public static final RegistryObject<Block> COFFEE_HONEY_BLOC = REGISTRY.register("coffee_honey_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_HONEY));
+	public static final RegistryObject<Block> COFFEE_MOCHA_BLOC = REGISTRY.register("coffee_mocha_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_MOCHA));
+	public static final RegistryObject<Block> COFFEE_CAPPUCCINO_BLOC = REGISTRY.register("coffee_cappuccino_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_CAPPUCCINO));
 	public static final RegistryObject<Block> CROISSANT_BLOC = REGISTRY.register("croissant_bloc", () -> new CroissantBlocBlock());
-	public static final RegistryObject<Block> COFFEE_SWEET_LUNGO_BLOC = REGISTRY.register("coffee_sweet_lungo_bloc", () -> new CoffeeSweetLungoBlocBlock());
-	public static final RegistryObject<Block> COFFEE_SWEET_EXPRESSO_BLOC = REGISTRY.register("coffee_sweet_expresso_bloc", () -> new CoffeeSweetExpressoBlocBlock());
+	public static final RegistryObject<Block> COFFEE_SWEET_LUNGO_BLOC = REGISTRY.register("coffee_sweet_lungo_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_SWEET_LUNGO));
+	public static final RegistryObject<Block> COFFEE_SWEET_EXPRESSO_BLOC = REGISTRY.register("coffee_sweet_expresso_bloc",
+			() -> new CoffeeBlock(CoffeecraftModItems.COFFEE_SWEET_EXPRESSO));
 }

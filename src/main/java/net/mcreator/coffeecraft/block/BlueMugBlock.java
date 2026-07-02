@@ -33,6 +33,7 @@ import net.mcreator.coffeecraft.procedures.TerracottaMugLorsDunClicDroitSurLeBlo
 import java.util.List;
 import java.util.Collections;
 
+@Deprecated
 public class BlueMugBlock extends FallingBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 

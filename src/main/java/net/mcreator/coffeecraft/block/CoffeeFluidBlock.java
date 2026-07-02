@@ -1,6 +1,7 @@
 
 package net.mcreator.coffeecraft.block;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +13,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.coffeecraft.procedures.CoffeeSmokeDefaultProcedure;
 import net.mcreator.coffeecraft.procedures.CoffeeFluidHitProcedure;
 import net.mcreator.coffeecraft.init.CoffeecraftModFluids;
 
@@ -30,6 +30,9 @@ public class CoffeeFluidBlock extends LiquidBlock {
 	@Override
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		CoffeeSmokeDefaultProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		// 元爲SmokeProcedure
+		if (Math.random() >= 0.8) {
+			world.addParticle(ParticleTypes.SMOKE, (pos.getX() + 0.5), (pos.getY() + 0.5), (pos.getZ() + 0.5), 0, 0.01, 0);
+		}
 	}
 }
