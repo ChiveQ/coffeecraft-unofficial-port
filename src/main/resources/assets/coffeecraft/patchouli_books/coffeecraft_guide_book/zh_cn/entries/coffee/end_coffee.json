@@ -1,0 +1,19 @@
+{
+    "name": "终域浓咖",
+    "icon": "coffeecraft:end_coffee",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "终域浓咖带您穿梭至末地秘境，这款饮品灵感源自末地空灵景观。深邃复杂的风味完美诠释异次元精髓，带来超凡脱俗的咖啡体验"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作终域浓咖",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:ender_pearl",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:end_coffee"
+        }
+    ]
+}

@@ -20,6 +20,7 @@ import net.mcreator.coffeecraft.init.CoffeecraftModBlocks;
 
 import java.util.List;
 
+@Deprecated
 public class ShortMugItem extends Item {
 	public ShortMugItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f).alwaysEat().build()));

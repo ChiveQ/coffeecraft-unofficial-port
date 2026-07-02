@@ -1,0 +1,19 @@
+{
+    "name": "浅萃隆戈",
+    "icon": "coffeecraft:long_mug",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "尽情享受我们浅萃隆戈的顺滑和细腻风味，这是一种用更多水量萃取的浓缩咖啡。享受其平衡的口感，提供较温和的强度，同时仍保持新鲜研磨咖啡豆的浓郁精华。"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作浅萃隆戈",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:air",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:long_mug"
+        }
+    ]
+}

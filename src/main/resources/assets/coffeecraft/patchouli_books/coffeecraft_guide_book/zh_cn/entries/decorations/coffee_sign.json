@@ -1,0 +1,15 @@
+{
+    "name": "咖啡招牌",
+    "icon": "coffeecraft:coffee_pancarte",
+    "category": "coffeecraft:decoration",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可放置在咖啡厅入口的小黑板，上面标注着店铺的布局示意图。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "coffeecraft:coffee_pancarte_craft"
+        }
+    ]
+}

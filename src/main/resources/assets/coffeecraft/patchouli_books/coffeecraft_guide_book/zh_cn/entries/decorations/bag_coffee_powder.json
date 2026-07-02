@@ -1,0 +1,16 @@
+{
+    "name": "袋装咖啡粉",
+    "icon": "coffeecraft:bag_coffee_powder",
+    "category": "coffeecraft:decoration",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "咖啡袋能在单个方块中储存大量咖啡豆，既便于运输也可作为室内装饰。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "coffeecraft:bag_coffee_powder_craft",
+            "recipe2": "coffeecraft:bag_coffee_powder_craft_2"
+        }
+    ]
+}

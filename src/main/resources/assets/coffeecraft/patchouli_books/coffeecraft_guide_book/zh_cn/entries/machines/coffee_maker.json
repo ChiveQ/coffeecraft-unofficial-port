@@ -1,0 +1,16 @@
+{
+    "name": "咖啡机",
+    "icon": "coffeecraft:coffee_maker_black",
+    "category": "coffeecraft:machine",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "咖啡机是自制咖啡的核心设备。使用时需确保储水器有足够水量。本机型提供多种配色可选。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "coffeecraft:coffee_maker_black_craft",
+            "recipe2": "coffeecraft:coffee_maker_white_craft"
+        }
+    ]
+}

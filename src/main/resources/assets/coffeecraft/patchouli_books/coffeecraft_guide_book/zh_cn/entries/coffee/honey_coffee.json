@@ -1,0 +1,19 @@
+{
+    "name": "蜂蜜咖啡",
+    "icon": "coffeecraft:coffee_honey",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "天然蜂蜜的甘甜为咖啡注入独特风味。醇厚咖啡与蜂蜜幽香完美平衡，打造令人愉悦的芳香饮品"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作蜂蜜咖啡",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:honey_bottle",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_honey"
+        }
+    ]
+}

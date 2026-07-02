@@ -268,5 +268,7 @@
   "painting.coffee.inside_coffee.title": "Inside Coffee",
   "block.coffeecraft.blue_mug": "Blue Mug",
   "block.coffeecraft.coffee_maker_white_empty": "Coffee Maker White",
-  "block.coffeecraft.grinder_anim": "Grinder"
+  "block.coffeecraft.grinder_anim": "Grinder",
+  "patchouli.coffeecraft.landing_text": "This guide is designed to help you on your coffee-growing adventure. It covers the basic concepts and crafts involved in making coffee.",
+  "patchouli.coffeecraft.name": "CoffeeCraft - Guide"
 }

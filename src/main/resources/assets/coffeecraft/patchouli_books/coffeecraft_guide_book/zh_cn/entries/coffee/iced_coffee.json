@@ -1,0 +1,19 @@
+{
+    "name": "冰咖啡",
+    "icon": "coffeecraft:coffee_iced",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用我们清爽的冰咖啡放松身心，这是一种令人愉悦的冷萃饮品，盛放在冰块上。随着冰块慢慢融化，享受清脆、提神的味道，创造出一种清凉提神的饮品，适合一天中的任何时间。"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作冰咖啡",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:ice",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_iced"
+        }
+    ]
+}

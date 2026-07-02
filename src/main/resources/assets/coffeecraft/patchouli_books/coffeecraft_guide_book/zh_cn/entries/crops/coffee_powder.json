@@ -1,0 +1,11 @@
+{
+    "name": "咖啡粉",
+    "icon": "coffeecraft:coffee_powder",
+    "category": "coffeecraft:crops",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "咖啡粉是咖啡豆加工的最后阶段。正是用这种粉末，您可以制作您的第一批咖啡。"
+        }
+    ]
+}

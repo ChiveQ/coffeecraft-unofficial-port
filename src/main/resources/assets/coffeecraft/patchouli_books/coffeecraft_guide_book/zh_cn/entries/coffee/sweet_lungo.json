@@ -1,0 +1,19 @@
+{
+    "name": "甜味浅萃隆戈",
+    "icon": "coffeecraft:coffee_sweet_lungo",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用我们的甜味浅萃隆戈咖啡提升您的咖啡体验，这是一种注入微妙甜味的延长浓缩咖啡的愉悦混合。享受顺滑、醇厚的风味与一丝焦糖或巧克力底韵的和谐结合，创造出一杯令人满足的放纵饮品。"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作甜味浅萃隆戈",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:sugar",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_sweet_lungo"
+        }
+    ]
+}

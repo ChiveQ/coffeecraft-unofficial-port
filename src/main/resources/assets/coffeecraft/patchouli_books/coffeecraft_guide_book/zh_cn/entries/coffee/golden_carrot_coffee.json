@@ -1,0 +1,19 @@
+{
+    "name": "暖阳萝汁咖啡",
+    "icon": "coffeecraft:coffee_carrot",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "金胡萝卜的鲜活精华为每口咖啡注入新生能量。这款提神饮品以经典咖啡为基础，带来令人耳目一新的味觉体验"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作暖阳萝汁咖啡",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:golden_carrot",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_carrot"
+        }
+    ]
+}

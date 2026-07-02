@@ -1,0 +1,19 @@
+{
+    "name": "焦糖浓缩",
+    "icon": "coffeecraft:coffee_sweet_expresso",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在我们的焦糖浓缩中品尝大胆浓缩咖啡与一丝甜味的愉悦融合。体验浓郁、强劲风味与焦糖或巧克力微妙音符的和谐平衡，创造出一种奢华的咖啡享受。"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作焦糖浓缩",
+            "item0": "coffeecraft:coffee_powder",
+            "item1": "minecraft:sugar",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_sweet_expresso"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "绒蛋拿铁",
+    "icon": "coffeecraft:coffee_egg",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "体验绒蛋拿铁的独特风味——香醇浓缩咖啡顶部覆盖生蛋泡沫。咖啡的浓郁与蛋液的丝滑形成奇妙组合，造就令人难忘的奢华饮品"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作绒蛋拿铁",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:egg",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_egg"
+        }
+    ]
+}

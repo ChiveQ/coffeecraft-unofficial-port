@@ -1,0 +1,15 @@
+{
+    "name": "研磨机",
+    "icon": "coffeecraft:grinder",
+    "category": "coffeecraft:machine",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于将咖啡豆研磨成适合咖啡机使用的粉末。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "coffeecraft:grinder_craft"
+        }
+    ]
+}

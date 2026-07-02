@@ -1,0 +1,19 @@
+{
+    "name": "意式浓缩",
+    "icon": "coffeecraft:short_mug",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "纯粹咖啡精华的终极体现，浓缩萃取的浓烈风味与馥郁香气。细品这经典饮品的醇厚丝滑质感"
+        },
+        {
+            "type": "coffeecraft:template_coffee_maker_short",
+            "text": "制作意式浓缩",
+            "item0": "coffeecraft:coffee_powder",
+            "item1": "coffeecraft:coffee_powder",
+            "item2": "coffeecraft:coffee_powder",
+            "result": "coffeecraft:short_mug"
+        }
+    ]
+}

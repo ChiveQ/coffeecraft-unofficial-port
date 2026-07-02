@@ -1,0 +1,19 @@
+{
+    "name": "烬域熔咖",
+    "icon": "coffeecraft:coffee_nether",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "体验我们烬域熔咖的风味烈焰，用强烈热量酿造并注入下界疣，带来魔鬼般大胆的冲击。享受烟熏浓郁和火热香料的炼狱融合，每一口都点燃您的味蕾，创造出这款大胆难忘的酿造。"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作烬域熔咖",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:nether_wart",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_nether"
+        }
+    ]
+}

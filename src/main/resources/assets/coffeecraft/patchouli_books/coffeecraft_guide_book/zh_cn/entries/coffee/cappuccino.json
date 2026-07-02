@@ -1,0 +1,19 @@
+{
+    "name": "卡布奇诺",
+    "icon": "coffeecraft:coffee_cappuccino",
+    "category": "coffeecraft:coffee",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "品味卡布奇诺的丝滑优雅——绵密的蒸汽牛奶完美调和浓缩咖啡的醇厚。顶部覆盖着蓬松奶泡，带来奢华而温馨的味觉盛宴"
+        },
+        {
+            "type": "coffeecraft:template_coffee_crafting",
+            "text": "制作卡布奇诺",
+            "item0": "coffeecraft:coffee_powder#2",
+            "item1": "minecraft:milk_bucket",
+            "item2": "minecraft:air",
+            "result": "coffeecraft:coffee_cappuccino"
+        }
+    ]
+}
